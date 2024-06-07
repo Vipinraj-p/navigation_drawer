@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
           padding: EdgeInsets.zero,
           children: [
             DrawerHeader(
-              decoration: BoxDecoration(color: Colors.amber),
+              decoration: const BoxDecoration(color: Colors.amber),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -25,56 +25,56 @@ class _HomePageState extends State<HomePage> {
                     "Images/Cycling.png",
                     width: 80,
                   ),
-                  Text("Traveling",
+                  const Text("Traveling",
                       style:
                           TextStyle(fontSize: 30, fontWeight: FontWeight.w500)),
-                  Text("www.example.com",
+                  const Text("www.example.com",
                       style:
                           TextStyle(fontSize: 18, fontWeight: FontWeight.w300)),
                 ],
               ),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.home),
               title: Text("Home"),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.directions_bike),
               title: Text("Cycling"),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.directions_bus_sharp),
               title: Text("Bus"),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.flight_takeoff),
               title: Text("plane"),
             ),
-            Divider(),
-            Padding(
-              padding: const EdgeInsets.only(left: 15),
+            const Divider(),
+            const Padding(
+              padding: EdgeInsets.only(left: 15),
               child: Text(
                 "Profile",
                 style: TextStyle(color: Colors.black45),
               ),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.login),
               title: Text("Login"),
             ),
-            Divider(),
-            Padding(
-              padding: const EdgeInsets.only(left: 15),
+            const Divider(),
+            const Padding(
+              padding: EdgeInsets.only(left: 15),
               child: Text(
                 "Communicate",
                 style: TextStyle(color: Colors.black45),
               ),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.share),
               title: Text("Share"),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.rate_review),
               title: Text("Rate Us"),
             )
@@ -86,8 +86,8 @@ class _HomePageState extends State<HomePage> {
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 15),
+              const Padding(
+                padding: EdgeInsets.only(left: 15),
                 child: Column(
                   children: [
                     Text(
@@ -105,7 +105,7 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 40,
               ),
               Image.asset(
@@ -118,7 +118,7 @@ class _HomePageState extends State<HomePage> {
             width: 700,
             height: 600,
             child: GridView.builder(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
               ),
               itemCount: titles.length,
@@ -131,7 +131,7 @@ class _HomePageState extends State<HomePage> {
                       width: 80,
                     ),
                     Text(titles[index],
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontSize: 16, fontWeight: FontWeight.w500))
                   ],
                 ));
